@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bezahlseite</title>
+  <link rel="stylesheet" type="text/css" href="buy.css">
+</head>
+
+<style>
+    /* CSS for Scrollbar */
+    body {
+    overflow: auto;
+  }
+  
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #535353;
+  }
+  
+  /* Scroll-to-Bottom Button Styles */
+  .scroll-to-bottom {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform: rotate(360deg);
+  }
+  
+  .scroll-to-bottom.show {
+    opacity: 1;
+  }
+  </style>
+<body>
+  <header>
+    <h1>Bezahlseite</h1>
+  </header>
+  
+  <main>
+    <section class="product">
+      <h2 class="h2">iPhone 13 Pro|128 GB|Dual-SIM Blue</h2>
+      <img src="slide3.jpg" alt="Iphoine" class="order">
+      <p>Beschreibung des Produkts</p>
+      <div class="price">Preis: $19.99</div>
+      <button class="buy-button">Kaufen</button>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Bezahlseite. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
