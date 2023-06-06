@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple (Deutschland)</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" class="logo" type="image/png" href="logo2.png">
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<style>
+  /* CSS for Scrollbar */
+  body {
+  overflow: auto;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #535353;
+}
+
+/* Scroll-to-Bottom Button Styles */
+.scroll-to-bottom {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transform: rotate(360deg);
+}
+
+.scroll-to-bottom.show {
+  opacity: 1;
+}
+</style>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav_logo">Apple-Store</a>
+
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="#iphones" class="nav_link">iPhones</a>
+          <a href="#iPads" class="nav_link">iPads</a>
+          <a href="#MacBooks" class="nav_link">MacBooks</a>
+          <a href="#AirPods" class="nav_link">AirPods</a>
+          <a href="#Con" class="nav_link">Contact</a>
+        </li>
+      </ul>
+
+      <button class="button" id="form-open">Login</button>
+    </nav>
+  </header>
+
+  <section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+      <div class="form login_form">
+        <form action="#">
+          <h2>Anmelden</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Enter your password" required />
+            <i class="uil uil-lock password"></i>
+            
+
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" />
+              <label for="check">Erinnere mich</label>
+            </span>
+            <a href="#" class="forgot_pw">Passwort vergessen?</a>
+          </div>
+
+          <button class="button">Jetzt einloggen</button>
+
+          <div class="login_signup">Noch keinen Account? <a href="#" id="signup">Registrieren</a></div>
+        </form>
+      </div>
+
+      <div class="form signup_form">
+        <form action="#">
+          <h2>Registrieren</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Create password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Confirm password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+         
+          <button class="button">Jetzt registrieren</button>
+          <div class="login_signup">Bereits einen Account? <a href="#" id="login">Einloggen</a></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <h1 id="iphones" class="section_title">iPhones</h1>
+<section class="cards">
+  <div class="card">
+    <link rel="stylesheet" href="buy.html">
+    <img src="card1.jpg" alt="Card 1" class="card_image" />
+    <div class="card_content">
+      <h3 class="card_title">€ 1079,–</h3>
+      <p class="card_description">iPhone 13 Pro | 128 GB | Dual-SIM | Gold</p>
+      <form action="paymantgold.html">
+        <button class="custom-button">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 3h4l2.689 11.627A2 2 0 0 0 9.333 17h5.334a2 2 0 0 0 1.644-1.373L19 7H6" />
+              <circle cx="10.5" cy="19.5" r="1.5" />
+              <circle cx="17.5" cy="19.5" r="1.5" />
+            </svg>
+          </span>
+          Buy Now
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="card">
+    <img src="card2.jpg" alt="Card 2" class="card_image" />
+    <div class="card_content">
+      <h3 class="card_title">€ 1639,–</h3>
+      <p class="card_description">iPhone 13 Pro | 128 GB | Dual-SIM | Blue</p>
+      <form action="paymantblue.html">
+        <button class="custom-button">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 3h4l2.689 11.627A2 2 0 0 0 9.333 17h5.334a2 2 0 0 0 1.644-1.373L19 7H6" />
+              <circle cx="10.5" cy="19.5" r="1.5" />
+              <circle cx="17.5" cy="19.5" r="1.5" />
+            </svg>
+          </span>
+          Buy Now
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="card">
+    <img src="card3.jpg" alt="Card 3" class="card_image" />
+    <div class="card_content">
+      <h3 class="card_title">€ 1372,–</h3>
+      <p class="card_description">iPhone 13 Pro | 128 GB | Dual-SIM | Black</p>
+      <form action="paymantblack.html">
+        <button class="custom-button">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 3h4l2.689 11.627A2 2 0 0 0 9.333 17h5.334a2 2 0 0 0 1.644-1.373L19 7H6" />
+              <circle cx="10.5" cy="19.5" r="1.5" />
+              <circle cx="17.5" cy="19.5" r="1.5" />
+            </svg>
+          </span>
+          Buy Now
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <div class="cards">
+    <div class="card">
+    </div>
+    <div class="card">
+    </div>
+    <div class="card">
+    </div>
+  </div>
+
+  <div class="dark-section">
+    <div class="dark-section-content">
+    </div>
+  </div>
+  <div id="iPads" class="dark-section">
+    <div class="dark-section-content">
+      <h2 class="pads" style="font-size: 60px;">iPads</h2>
+      <h3 class="des">Description</h3>
+      <br>
+      <q class="text">Apple 2022 11" iPad Pro </q>
+      <div class="slider">
+        <img src="slide4.jpg" alt="Bild 1" style="border-radius: 35px; background: transparent;" />
+        <img src="slide5.jpg" alt="Bild 2" class="slide5" style="border-radius: 35px;" />
+        <img src="slide6.jpg" alt="Bild 3" style="border-radius: 35px;" />
+        <img src="slide7.jpg" alt="Bild 3" style="border-radius: 35px;" />
+      </div>
+    </div>
+  </div>
+
+  <section id="MacBooks" class="laptops">
+    <div class="laptops-content">
+      <h2 class="laptops-heading">MacBooks</h2>
+  
+      <div class="laptop-card">
+        <img class="laptop-image" src="laptop1.jpg" alt="Laptop 1">
+        <h3 class="laptop-title">€ 1079,–</h3>
+        <p class="laptop-description">APPLE MacBook Air (2020), Notebook mit 13,3 Zoll Display</p>
+        <a class="laptop-button" href="#">Jetzt Kaufen</a>
+      </div>
+  
+      <div class="laptop-card">
+        <img class="laptop-image" src="laptop2.jpg" alt="Laptop 2">
+        <h3 class="laptop-title">€ 2279,–</h3>
+        <p class="laptop-description">APPLE MacBook Pro M2 Pro, 2023, Notebook mit 14,2 Zoll Display</p>
+        <a class="laptop-button" href="#">Jetzt Kaufen</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="AirPods" class="airpods">
+    <div class="airpods-content">
+      <h2 class="airpods-heading">AirPods</h2>
+  
+      <div class="airpods-card">
+        <img class="airpods-image" src="airpods1.jpg" alt="AirPods 1">
+        <h3 class="airpods-title">€ 179,–</h3>
+        <p class="airpods-description">Apple AirPods mit Ladecase (2. Generation)</p>
+        <a class="airpods-button" href="#">Jetzt Kaufen</a>
+      </div>
+  
+      <div class="airpods-card">
+        <img class="airpods-image" src="airpods2.jpg" alt="AirPods 2">
+        <h3 class="airpods-title">€ 279,–</h3>
+        <p class="airpods-description">Apple AirPods Pro mit kabellosem Ladecase</p>
+        <a class="airpods-button" href="#">Jetzt Kaufen</a>
+      </div>
+  
+      <div class="airpods-card">
+        <img class="airpods-image" src="airpods3.jpg" alt="AirPods 3">
+        <h3 class="airpods-title">€ 279,–</h3>
+        <p class="airpods-description">Apple AirPods Pro mit kabellosem Ladecase</p>
+        <a class="airpods-button" href="#">Jetzt Kaufen</a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <footer id="Con" class="footer">
+    <div class="footer-container">
+      <div>
+        <h3>Get our latest updates</h3>
+        <form>
+          <div class="input-wrap">
+            <input type="email" placeholder="Enter Your Email" />
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Protocol Explore</a></li>
+          <li><a href="#">System Token</a></li>
+          <li><a href="#">Optimize Time</a></li>
+          <li><a href="#">Visual Checking</a></li>
+          <li><a href="#">Activity Log</a></li>
+          <li><a href="#">System Auto Since</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">Market Explore</a></li>
+          <li><a href="#">Ready Token</a></li>
+          <li><a href="#">Main Option</a></li>
+          <li><a href="#">File Checking</a></li>
+          <li><a href="#">Blog Grid</a></li>
+          <li><a href="#">Fix Bug</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">Upload Files</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Item Details</a></li>
+          <li><a href="#">Recent Activity</a></li>
+          <li><a href="#">Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Whatsapp</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="scroll-to-bottom" onclick="scrollToBottom()">
+    <i class="uil uil-arrow-down"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
